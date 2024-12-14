@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* max-width: 1440px; */
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+
+    padding-top: 3.12rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 58.69rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:first-child {
+    width: 100%;
+    max-width: 9.37rem;
+    text-wrap: nowrap;
+}
+
+nav a:last-child {
+    width: 100%m;
+    max-width: 13.69rem;
+    text-wrap: nowrap;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 34.94rem;
+    height: 100%;
+    max-height: 23.25rem;
+
+    margin: auto;
+    margin-top: 15.47rem;
+    margin-bottom: 20.41rem;
+    gap: 2.5rem;
+}
+
+h1 {
+    width: 100%;
+    max-width: 34.97rem;
+    font-size: 96px;
+    font-weight: 400;
+    color: #15181B;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+    color: #15181B;
+}
+
+button {
+    width: 15.62rem;
+    height: 2.37rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 0.38rem;
+    
+    background-color: transparent;
+    border: 2px solid #15181B;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #15181B;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    color: #FAFCFE;
+    background-color: #15181B;
+    transition: 0.3s;
+}
+
+
+/* Responsivo - Tablet */
+@media (max-width: 834px) {
+    header {
+        padding-top: 3.12rem;
+    }
+    
+    nav {
+        gap: 25.56rem;
+    }
+    
+    .hero {
+        display: flex;
+        margin-top: 16.28rem;
+        margin-bottom: 20.41rem;
+        text-align: center;
+    }
+}
+
+
+/* Responsivo - Mobile */
+@media (max-width: 430px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.37rem;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1.37rem;
+    }
+    
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 24.37rem;
+        margin-top: 15.16rem;
+        margin-bottom: 22.47rem;
+        gap: 1.41rem;
+    }
+    
+    h1 {
+        width: 100%;
+        font-size: 63px;
+        text-align: initial;
+    }
+
+    .quebra-linha {
+        display: none;
+    }
+
+    p {
+        text-align: center;
+    }
+}

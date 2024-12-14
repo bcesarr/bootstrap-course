@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* max-width: 1440px; */
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+
+    padding-top: 3.12rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 58.69rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:first-child {
+    width: 100%;
+    max-width: 9.37rem;
+    text-wrap: nowrap;
+}
+
+nav a:last-child {
+    width: 100%m;
+    max-width: 13.69rem;
+    text-wrap: nowrap;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 56.75rem;
+    height: 100%;
+    max-height: 16.19rem;
+
+    margin: auto;
+    margin-top: 19rem;
+    margin-bottom: 23.94rem;
+    gap: 2.5rem;
+}
+
+h1 {
+    width: 100%;
+    max-width: 56.75rem;
+    font-size: 93px;
+    font-weight: 400;
+    color: #15181B;
+}
+
+span {
+    font-size: 93px;
+    font-weight: 400;
+    color: #15181B;
+}
+
+.quebra-linha {
+    display: none;
+}
+
+.quebra-linha-mobile {
+    display: none;
+}
+
+p {
+    font-size: 24px;
+    color: #15181B;
+}
+
+button {
+    width: 15.62rem;
+    height: 2.37rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 0.38rem;
+    
+    background-color: transparent;
+    border: 2px solid #15181B;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #15181B;
+
+    cursor: pointer;
+}
+
+
+/* Responsivo - Tablet */
+@media (max-width: 834px) {
+    header {
+        padding-top: 3.12rem;
+    }
+    
+    nav {
+        gap: 25.56rem;
+    }
+    
+    .hero {
+        display: flex;
+        margin-top: 15.41rem;
+        margin-bottom: 19.53rem;
+        text-align: center;
+    }
+
+    span {
+        display: none;
+    }
+
+    .quebra-linha {
+        display: block;
+    }
+}
+
+
+/* Responsivo - Mobile */
+@media (max-width: 430px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.37rem;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1.37rem;
+    }
+    
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 9.59rem;
+        margin-bottom: 16.91rem;
+        gap: 1.41rem;
+    }
+    
+    h1 {
+        font-size: 64px;
+    }
+
+    p {
+        text-wrap: nowrap
+    };
+
+    span {
+        display: none;
+    }
+    
+    .quebra-linha {
+        display: none;
+    }
+
+    .quebra-linha-mobile {
+        display: block;
+    }
+}
